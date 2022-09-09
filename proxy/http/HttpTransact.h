@@ -525,6 +525,7 @@ public:
     /// zero means no failure (not attempted, succeeded).
     int connect_result                   = 0;
     char *name                           = nullptr;
+    IpEndpoint name_addr;
     TransferEncoding_t transfer_encoding = NO_TRANSFER_ENCODING;
 
     /** This is the source address of the connection from the point of view of the transaction.
